@@ -15,7 +15,6 @@ public class UserRepositoryFake implements IUserRepository {
 		return users;
 	}
 
-	@Override
 	public void shutdown() {
 		// TODO Auto-generated method stub
 		

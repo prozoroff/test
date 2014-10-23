@@ -37,7 +37,7 @@ public class UsersServlet extends HttpServlet {
         try{
         	users = repository.getAll();
         	request.setAttribute("message", "OK");
-        	request.setAttribute("users", new Gson().toJson(users.toString()));
+        	request.setAttribute("users", new Gson().toJson(users));
             getServletContext().getRequestDispatcher("/users.jsp").forward(
                   request, response);
         }
